@@ -1,23 +1,16 @@
-<<<<<<< HEAD
 import pytest
-=======
-'''import pytest
->>>>>>> 917679db902af80ec6733bab4d7ad6a1d7b8e338
-
 from selenium import webdriver
 
 @pytest.fixture
 def setup_and_teardown():
     driver = webdriver.Chrome()   ## setup
     driver.maximize_window()
-<<<<<<< HEAD
-    # driver.get('https://demowebshop.tricentis.com/')
-    yield driver
-    driver.quit()     ## teardown
-=======
     driver.get('https://demowebshop.tricentis.com/')
     yield driver
-    driver.quit()    '''
+    driver.quit()     ## teardown
+    driver.get('https://demowebshop.tricentis.com/')
+    yield driver
+    driver.quit()
 
 
 ## Cross browser Testing
@@ -50,5 +43,5 @@ def setup_and_teardown(request):
 # # First execution --> request.parm = 'chrome'
 # # Second execution --> request.parm = 'edge'....
 
-#comment
->>>>>>> 917679db902af80ec6733bab4d7ad6a1d7b8e338
+# #comment
+# >>>>>>> 917679db902af80ec6733bab4d7ad6a1d7b8e338
