@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import pytest
-=======
 '''import pytest
->>>>>>> 917679db902af80ec6733bab4d7ad6a1d7b8e338
 
 from selenium import webdriver
 
@@ -10,11 +6,6 @@ from selenium import webdriver
 def setup_and_teardown():
     driver = webdriver.Chrome()   ## setup
     driver.maximize_window()
-<<<<<<< HEAD
-    # driver.get('https://demowebshop.tricentis.com/')
-    yield driver
-    driver.quit()     ## teardown
-=======
     driver.get('https://demowebshop.tricentis.com/')
     yield driver
     driver.quit()    '''
@@ -51,4 +42,4 @@ def setup_and_teardown(request):
 # # Second execution --> request.parm = 'edge'....
 
 #comment
->>>>>>> 917679db902af80ec6733bab4d7ad6a1d7b8e338
+#new

@@ -1,10 +1,7 @@
 from Demo_Tricentis_Framework.pages.login_page import LoginPage
 import pytest
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 917679db902af80ec6733bab4d7ad6a1d7b8e338
 @pytest.mark.smoke
 def test_valid_login(setup_and_teardown):
     lp = LoginPage(setup_and_teardown)
@@ -19,9 +16,6 @@ def test_invalid_login(setup_and_teardown):
     lp.click_login()
     lp.enter_email("twee123@gmail.com")
     lp.enter_password("@9090")
-<<<<<<< HEAD
-    lp.click_login_button()
-=======
     lp.click_login_button()
 
 
@@ -41,4 +35,3 @@ def test_valid_login(setup_and_teardown,username,password): ## setup tear return
 
 '''
 
->>>>>>> 917679db902af80ec6733bab4d7ad6a1d7b8e338
